@@ -67,8 +67,6 @@ function getSignatureKey(key, dateStamp, regionName, serviceName) {
 
 function signUrl(method, scheme, hostname, path, queryParams, accessId, secretKey, 
                  region, serviceName, payload, today, now, token, debug ) {
-    console.log(token)
-
    var signedHeaders = 'host';
 
    var canonicalHeaders = 'host:' + hostname + '\n';
