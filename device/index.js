@@ -191,8 +191,8 @@ module.exports = function(options) {
   else if (options.protocol === 'wss')
   {
      //AWS access id and secret key must be available in environment
-     awsAccessId = process.env.AWS_ACCESS_KEY_ID;
-     awsSecretKey = process.env.AWS_SECRET_ACCESS_KEY;
+     awsAccessId = options.access_key || process.env.AWS_ACCESS_KEY_ID;
+     awsSecretKey = options.secret_key || process.env.AWS_SECRET_ACCESS_KEY;
   
      if (isUndefined( awsAccessId ) || (isUndefined( awsSecretKey )))
      {
