@@ -1,3 +1,7 @@
+## [1.0.10](https://github.com/aws/aws-iot-device-sdk-js/releases/tag/v1.0.10) (April 7, 2016)
+
+Features: - Support for security_token in this older non es6 version so that it can mantain being able to be used in lambda.
+
 ## [1.0.10](https://github.com/aws/aws-iot-device-sdk-js/releases/tag/v1.0.10) (January 28, 2016)
 
 Features:
